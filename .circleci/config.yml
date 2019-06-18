@@ -1,0 +1,75 @@
+version: 2
+jobs:
+
+  # define our job
+  build-and-deploy:
+
+    # define the executor and image to use
+    docker:
+      - image: circleci/php:7.1-node-browsers
+
+    # define where we checkout out code etc
+    working_directory: ~/myapp
+
+    # now the fun part, define our build steps
+    steps:
+
+      # checkout our source code
+      - checkout
+
+      # composer
+      - run: sudo composer self-update
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "~/myapp/app/composer.json" }}
+            - composer-v1-
+      - run: cd ~/myapp/app && composer install -n --prefer-dist --no-dev
+      - save_cache:
+          paths:
+            - ~/myapp/app/vendor
+          key: composer-v1-{{ checksum "~/myapp/app/composer.json" }}
+
+      # npm
+      - restore_cache:
+          keys:
+            - node-v1-{{ checksum "~/myapp/app/package.json" }}
+            - node-v1-
+      - run: cd ~/myapp/app && npm install --production
+      - save_cache:
+          key: node-v1-{{ checksum "~/myapp/app/package.json" }}
+          paths:
+            - ~/myapp/app/node_modules
+
+      # run a little test
+      #- run: cd ~/myapp/app && npm test
+
+      # build our project
+      - run: cd ~/myapp/app && npm run build
+
+      # a remote environment will be created, and our current primary container will be configured to use it, any docker-related commands we use will be safely executed in this new environment
+      - setup_remote_docker
+
+      # build image, push to dockerhub, and deploy
+      - run:
+          name: Build application Docker image
+          command: |
+            docker build -t $DOCKERHUB_REPO:$CIRCLE_BRANCH .
+      - run:
+          name: Push the Docker image to the registry
+          command: |
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker push $DOCKERHUB_REPO:$CIRCLE_BRANCH
+      #- run:
+        #  name: Deploy, ssh in, pull image, and run
+        #  command: |
+        #    cat deploy.sh | ssh -o StrictHostKeyChecking=no $DROPLET_USER@$DROPLET_IP
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build-and-deploy:
+          filters:
+            branches:
+              only:
+                - master

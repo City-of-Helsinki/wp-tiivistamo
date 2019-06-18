@@ -1,0 +1,29 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /var/www/html/dist/.htpasswd
+Require valid-user
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# rewrite for uploads
+#RewriteCond %{REQUEST_URI} ^/wp-content/uploads/[^\/]*/.*$
+#RewriteCond %{HTTP_HOST} !^(.*)?production.com
+#RewriteRule ^(.*)$ http://production.com/$1 [QSA,L]
+
+#RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+#RewriteRule \.(gif|jpe?g|png|bmp) https://fakeimg.pl/650x650/cccccc/666666/?text=img [NC,L]
+
+# rewrite for cache busting
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)\.(\d+)\.(js|css|png|jpg|gif)$ $1.$3 [L]
+
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
