@@ -1,6 +1,7 @@
+<?php global $app; ?>
 <header class="b-site-header js-site-header">
     <div class="b-site-header__container">
-        <a class="b-site-header__logo" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+        <a class="b-site-header__logo" style="background-image: url('<?php the_field('opt_logo', 'options') ?>')" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
 
         <div class="b-site-header__slogan">
             <?php echo \Evermade\Swiss\template('_slogan.php'); ?>

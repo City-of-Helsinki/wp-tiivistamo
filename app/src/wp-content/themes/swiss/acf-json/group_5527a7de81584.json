@@ -19,6 +19,68 @@
             "endpoint": 0
         },
         {
+            "key": "field_5d0b17e520590",
+            "label": "Logo",
+            "name": "opt_logo",
+            "type": "image",
+            "instructions": "Logo file. Preferably png with transparent background.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d0b183220591",
+            "label": "Primary tagline",
+            "name": "opt_primary_tagline",
+            "type": "text",
+            "instructions": "Bolded text displayed next to the logo. You can leave this field empty.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d0b1c2220592",
+            "label": "Secondary tagline",
+            "name": "opt_secondary_tagline",
+            "type": "text",
+            "instructions": "Text displayed next to the primary tagline. You can leave this field empty.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5652f15ee21de",
             "label": "Google Analytics Trackers",
             "name": "opt_google_analytics",
@@ -403,5 +465,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1539956904
+    "modified": 1561009950
 }

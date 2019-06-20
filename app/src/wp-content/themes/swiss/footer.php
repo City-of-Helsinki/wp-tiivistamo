@@ -10,7 +10,7 @@
 
             <div class="b-footer__logo">
                 <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
-                    <img alt="<?php _e('Oodi', 'swiss');?>" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-black.svg" alt="<?php bloginfo('name'); ?>">
+                    <img alt="<?php _e('Oodi', 'swiss');?>" src="<?php the_field('opt_logo', 'options') ?>" alt="<?php bloginfo('name'); ?>">
                 </a>
             </div>
             <nav class="b-footer__navigation" aria-label="<?php _e('Footer navigation', 'swiss');?>">
@@ -36,17 +36,6 @@
                         alt="<?php bloginfo('name'); ?>">
                 </div>
 
-                <div class="b-footer__logos-item b-footer__logos-item--library">
-                    <a href="https://www.kirjastot.fi/" title="kirjastot.fi" target="_blank">
-                        <img alt="<?php _e('Library', 'swiss');?>" class="b-footer__logos-item__logo--library"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/library_logo2.svg"/>
-                    </a>
-
-                    <a href="https://www.helmet.fi/" title="helmet.fi" target="_blank">
-                        <img alt="<?php _e('Helmet', 'swiss');?>" class="b-footer__logos-item__logo--library"
-                            src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-helmet.svg"/>
-                    </a>
-                </div>
             </div>
 
             <div class="b-footer__copyright">
