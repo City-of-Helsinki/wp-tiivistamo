@@ -129,17 +129,17 @@
         },
         {
             "name": "evermade/advanced-custom-fields-pro",
-            "version": "5.8.0",
+            "version": "5.8.1",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/advanced-custom-fields-pro.git",
-                "reference": "972d2b2b7f66b62e6877dac72761022977011c98"
+                "reference": "b4c352ffbfab5637152f86247b58b09f897329fd"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/advanced-custom-fields-pro/evermade-advanced-custom-fields-pro-5.8.0-76ba28.tar",
-                "reference": "972d2b2b7f66b62e6877dac72761022977011c98",
-                "shasum": "07f3df42e7a0f0a22d4d4f4b53a0eb9bcec4403f"
+                "url": "http://composer.em87.io/dist/evermade/advanced-custom-fields-pro/evermade-advanced-custom-fields-pro-5.8.1-ac639d.tar",
+                "reference": "b4c352ffbfab5637152f86247b58b09f897329fd",
+                "shasum": "457f6ff408c3d6db53f2c6d902d2e96a9d27faf7"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -153,7 +153,7 @@
                 "GPL-3.0"
             ],
             "description": "Fork of Advanced Custom Fields Pro repo so we can use it in our composer architecture.",
-            "time": "2019-05-08 10:33:23"
+            "time": "2019-06-18 08:57:47"
         },
         {
             "name": "evermade/gravityforms",
@@ -294,23 +294,23 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "7555561027211f295e1d6a77d06ab47f605608cd"
+                "reference": "bbded8adf0ddd8cafdbd6e6605e0ee82d5c1dc8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/7555561027211f295e1d6a77d06ab47f605608cd",
-                "reference": "7555561027211f295e1d6a77d06ab47f605608cd",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/bbded8adf0ddd8cafdbd6e6605e0ee82d5c1dc8a",
+                "reference": "bbded8adf0ddd8cafdbd6e6605e0ee82d5c1dc8a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "5.2.1"
+                "wordpress/core-implementation": "5.2.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -330,7 +330,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-05-21 18:27:33"
+            "time": "2019-06-18 17:57:57"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -698,15 +698,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.6.7",
+            "version": "1.6.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.6.7"
+                "reference": "tags/1.6.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.6.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.6.8.zip",
                 "reference": null,
                 "shasum": null
             },
