@@ -62,7 +62,16 @@ $tz = new DateTimeZone( 'Europe/Helsinki' );
 $event_datetime = new DateTime($event->start_time);
 $event_datetime = $event_datetime->setTimezone($tz);
 
-$price = ( isset( $event->offers[0]->price->fi ) ? $event->offers[0]->price->fi : '' );
+$price = "";
+if( isset( $event->offers ) ){
+    if( isset( $event->offers[0] ) ){
+        if( isset( $event->offers[0]->price ) ){
+            if( isset( $event->offers[0]->price->fi ) ){
+                $price = (string)($event->offers[0]->price->fi . '€');
+            }
+        }
+    }
+}
 
 // Use CalendarLinks package to generate calendar links (duh)
 $calendar_title = $name;

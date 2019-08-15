@@ -525,16 +525,10 @@ class LinkedEvents extends React.Component {
                                             <p>
                                                 <i className="c-icon c-icon__money" />{" "}
                                                 {
-                                                    item.meta.location.name[
+                                                    item.meta.price[
                                                         this.state.language
-                                                    ]
+                                                    ].replace('€','') + "€"
                                                 }
-                                                {item.meta.location_extra &&
-                                                    ", " +
-                                                        item.meta
-                                                            .location_extra[
-                                                            this.state.language
-                                                        ]}
                                             </p>
                                         </div>
                                         <div
