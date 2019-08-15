@@ -56,7 +56,8 @@ function getStores() {
                 //'last_published_time' => $store->last_published_time,
                 'featured_image_url' => sizeof($store->images) > 0 ? $store->images[0]->url : '',
                 'location' => $store->location,
-                'location_extra' => $store->location_extra_info
+                'location_extra' => $store->location_extra_info,
+                'price' => $store->offers[0]->price,
             )
         ]);
     });
