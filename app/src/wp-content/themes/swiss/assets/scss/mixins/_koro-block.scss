@@ -22,7 +22,7 @@
     } @else if $color == "turquoise" {
         border-color: $color-turquoise;
     } @else if $color == "almost-black" {
-        border-color: $color-almost-black;
+        border-color: #000;
     }
     &::before {
         @include z-index(content, 1);
