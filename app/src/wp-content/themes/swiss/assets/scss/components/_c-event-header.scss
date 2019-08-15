@@ -3,7 +3,8 @@
     }
 
     &__datetime,
-    &__location {
+    &__location,
+    &__price {
         @include font-size(h4);
     }
     &__location_extra {

@@ -14,6 +14,7 @@
                             <?php echo \Evermade\Swiss\sprint('<p class="c-event-header__location"><i class="c-icon c-icon__marker"></i> %s</p>', $location_name); ?>
                             <?php echo \Evermade\Swiss\sprint('<span class="c-event-header__location_extra">%s</span>', $location_extra); ?>
                             </div>
+                            <?php echo \Evermade\Swiss\sprint('<span class="c-event-header__price"><i class="c-icon c-icon__money"></i> %s€</span>', $price); ?>
                         </div>
                     </div>
                 </div>

@@ -522,6 +522,20 @@ class LinkedEvents extends React.Component {
                                                             this.state.language
                                                         ]}
                                             </p>
+                                            <p>
+                                                <i className="c-icon c-icon__money" />{" "}
+                                                {
+                                                    item.meta.location.name[
+                                                        this.state.language
+                                                    ]
+                                                }
+                                                {item.meta.location_extra &&
+                                                    ", " +
+                                                        item.meta
+                                                            .location_extra[
+                                                            this.state.language
+                                                        ]}
+                                            </p>
                                         </div>
                                         <div
                                             className="c-btn c-btn--arrow"

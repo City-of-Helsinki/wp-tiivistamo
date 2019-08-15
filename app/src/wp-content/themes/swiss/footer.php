@@ -10,7 +10,7 @@
 
             <div class="b-footer__logo">
                 <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
-                    <img alt="<?php _e('Oodi', 'swiss');?>" src="<?php the_field('opt_logo', 'options') ?>" alt="<?php bloginfo('name'); ?>">
+                    <img alt="<?php _e('Tiivistämö', 'swiss');?>" src="<?php the_field('opt_logo_footer', 'option') ?>" alt="<?php bloginfo('name'); ?>">
                 </a>
             </div>
             <nav class="b-footer__navigation" aria-label="<?php _e('Footer navigation', 'swiss');?>">
@@ -27,10 +27,10 @@
         <div class="b-footer__lower">
             <div class="b-footer__logos">
                 <div class="b-footer__logos-item b-footer__logos-item--helsinki">
-                    <img class="b-footer__logos-item__logo--helsinki" alt="<?php _e('Oodi', 'swiss');?>" src="
+                    <img class="b-footer__logos-item__logo--helsinki" alt="<?php _e('Tiivistämö', 'swiss');?>" src="
                         <?php
                             global $sitepress;
-                            $logo = $sitepress->get_current_language() == 'sv' ? 'helsingfors_logo.svg' : 'helsinki-logo2.svg';
+                            $logo = $sitepress->get_current_language() == 'sv' ? 'tiivistamo_logo_FHD.png' : 'tiivistamo_logo_FHD.png';
                             echo get_template_directory_uri() . '/assets/img/' . $logo;
                         ?>"
                         alt="<?php bloginfo('name'); ?>">

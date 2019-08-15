@@ -6,7 +6,19 @@
         display: flex;
         flex-direction:column;
 
-        .b-highlight--yellow & { background: $color-yellow; }
+        .b-highlight--yellow & { 
+            background: $color-yellow; 
+            & {
+                h1,h2,h3,h4,h5,h6,p,span {
+                    color: black;
+                }
+
+                a.c-btn {
+                    border-color: black;
+                    color: black;
+                }
+            }
+        }
         .b-highlight--pink & { background: $color-pink-lighter; }
         .b-highlight--green & { background: $color-green-lighter; }
         .b-highlight--blue & { background: $color-blue-bright; color: #fff; }

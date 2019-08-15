@@ -27,7 +27,31 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d0c14e520690",
+            "label": "Logo footer",
+            "name": "opt_logo_footer",
+            "type": "image",
+            "instructions": "Logo file. Preferably png with transparent background.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -48,25 +72,6 @@
             "name": "opt_primary_tagline",
             "type": "text",
             "instructions": "Bolded text displayed next to the logo. You can leave this field empty.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5d0b1c2220592",
-            "label": "Secondary tagline",
-            "name": "opt_secondary_tagline",
-            "type": "text",
-            "instructions": "Text displayed next to the primary tagline. You can leave this field empty.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {

@@ -23,6 +23,18 @@
             background-size:100%;
         }
     }
+    &__money {
+        &::before {
+            content:'';
+            width: 18px;
+            height: 23px;
+            position: absolute;
+            background: url('../img/money-icon.svg');
+            background-size:100%;
+            background-repeat: no-repeat;
+            top: 2px;
+        }
+    }
 
     &__close {
         display: block;

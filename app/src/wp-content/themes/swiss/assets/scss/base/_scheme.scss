@@ -91,7 +91,7 @@
         }
 
         > div {
-            background:$color-almost-black;
+            background:#000; // requested by client
             padding-top: 1px;
             padding-bottom: 1px;
             @include scheme-html($color-body, $color-body, $color-link);
