@@ -67,7 +67,7 @@ if( isset( $event->offers ) ){
     if( isset( $event->offers[0] ) ){
         if( isset( $event->offers[0]->price ) ){
             if( isset( $event->offers[0]->price->fi ) ){
-                $price = (string)($event->offers[0]->price->fi . '€');
+                $price = (string)($event->offers[0]->price->fi);
             }
         }
     }
