@@ -527,7 +527,7 @@ class LinkedEvents extends React.Component {
                                                 {
                                                     item.meta.price[
                                                         this.state.language
-                                                    ].replace('€','') + "€"
+                                                    ]
                                                 }
                                             </p>
                                         </div>
