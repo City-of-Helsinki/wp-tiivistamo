@@ -68,13 +68,13 @@ add_action('init', '\Evermade\LinkedEvents\Rewrites\init_query_vars');
 * @param       string    $sep      Optional separator.
 * @return      string              The filtered title.
 */
-// function fairapp_wp_title( $title, $sep ) {
+function fairapp_wp_title( $title, $sep ) {
 
-//     if (isset($GLOBALS['api_item_title'])) {
-//         return $GLOBALS['api_item_title'] . ' | ' . get_bloginfo('title');
-//     } else {
-//         return $title;
-//     }
+    if (isset($GLOBALS['api_item_title'])) {
+        return $GLOBALS['api_item_title'] . ' | ' . get_bloginfo('title');
+    } else {
+        return $title;
+    }
 
-// }
-// add_filter( 'wp_title', 'fairapp_wp_title', 100, 2 );
+}
+add_filter( 'wp_title', 'fairapp_wp_title', 100, 2 );

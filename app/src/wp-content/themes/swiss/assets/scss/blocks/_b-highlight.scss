@@ -13,15 +13,72 @@
                     color: black;
                 }
 
-                a.c-btn {
+                a, a.c-btn {
                     border-color: black;
-                    color: black;
+                    color: black !important;
                 }
             }
         }
-        .b-highlight--pink & { background: $color-pink-lighter; }
-        .b-highlight--green & { background: $color-green-lighter; }
-        .b-highlight--blue & { background: $color-blue-bright; color: #fff; }
+
+        .b-highlight--pink & {
+            background: $color-pink-lighter;
+            & {
+                h1,h2,h3,h4,h5,h6,p,span {
+                    color: white;
+                }
+
+                a, a.c-btn {
+                    border-color: white;
+                    color: white !important;
+                }
+
+                .c-btn--arrow {
+                    &:before {
+                        background-image: url('../img/chevron-white.svg');
+                    }
+                }
+            }
+        }
+
+        .b-highlight--green & {
+            background: $color-green-lighter;
+            & {
+                h1,h2,h3,h4,h5,h6,p,span {
+                    color: white;
+                }
+
+                a, a.c-btn {
+                    border-color: white;
+                    color: white !important;
+                }
+
+                .c-btn--arrow {
+                    &:before {
+                        background-image: url('../img/chevron-white.svg');
+                    }
+                }
+            }
+        }
+
+        .b-highlight--blue & {
+            background: $color-blue-bright; 
+            & {
+                h1,h2,h3,h4,h5,h6,p,span {
+                    color: white;
+                }
+
+                a, a.c-btn {
+                    border-color: white;
+                    color: white !important;
+                }
+
+                .c-btn--arrow {
+                    &:before {
+                        background-image: url('../img/chevron-white.svg');
+                    }
+                }
+            }
+        }
 
         @include bp(md) {
             flex-direction:row;

@@ -107,6 +107,9 @@ if ($event) {
     if (isset($event->permalink)) $GLOBALS['api_item_url'] = $event->permalink;
 }
 
+/**
+ * Output
+ */
 get_header();
 
 if ($event) {
