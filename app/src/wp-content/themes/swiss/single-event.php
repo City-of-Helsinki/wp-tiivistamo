@@ -70,6 +70,12 @@ if( isset( $event->offers ) ){
                 $price = (string)($event->offers[0]->price->fi);
             }
         }
+
+        if( isset( $event->offers[0]->info_url ) ){
+            if( isset( $event->offers[0]->info_url->fi ) ){
+                $ticket_link = (string)($event->offers[0]->info_url->fi);
+            }
+        }
     }
 }
 

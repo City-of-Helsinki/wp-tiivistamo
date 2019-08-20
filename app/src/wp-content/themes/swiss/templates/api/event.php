@@ -14,7 +14,7 @@
                             <?php echo \Evermade\Swiss\sprint('<p class="c-event-header__location"><i class="c-icon c-icon__marker"></i> %s</p>', $location_name); ?>
                             <?php echo \Evermade\Swiss\sprint('<span class="c-event-header__location_extra">%s</span>', $location_extra); ?>
                             </div>
-                            <?php echo ( $price ? \Evermade\Swiss\sprint('<span class="c-event-header__price"><i class="c-icon c-icon__money"></i> %s</span>', $price) : '' ); ?>
+                            <?php echo ( $price ? \Evermade\Swiss\sprint('<p class="c-event-header__price"><i class="c-icon c-icon__money"></i> %s</p>', $price) : '' ); ?>
                         </div>
                     </div>
                 </div>
@@ -50,9 +50,18 @@
 
             <?php $iconEarthFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/maapallo.svg'); ?>
             <?php $iconHeartFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/sydan.svg'); ?>
+            <?php $iconTicketFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/lippu.svg'); ?>
 
             <div class="l-event__sidebar">
                 <div class="c-event-sidebar h-wysiwyg-html">
+                    <?php if ( isset($ticket_link) && !empty($ticket_link) ) : ?>
+                        <div class="c-event-sidebar__section">
+                            <ul>
+                                <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__ticket-link" href="%s" target="_blank">%s %s</a></li>', array($ticket_link, $iconTicketFile, __('Buy tickets', 'swiss'))); ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+
                     <div class="c-event-sidebar__section">
                         <?php echo \Evermade\Swiss\sprint('<h3>%s</h3>', __('Add to your calendar', 'swiss')); ?>
                         <ul>

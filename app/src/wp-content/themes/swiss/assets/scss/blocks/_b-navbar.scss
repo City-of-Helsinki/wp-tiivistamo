@@ -22,10 +22,11 @@
         background: #fff;
         display: flex;
         align-items: center;
-        height: $b-navbar-height-mobile;
+        min-height: $b-navbar-height-mobile;
         padding: 0 $b-navbar-horizontal-padding;
-        @include bp(sm) {
-            height: $b-navbar-height;
+        @include bp(1100px) {
+            height: auto;
+            min-height: $b-navbar-height;
         }
     }
 
@@ -127,6 +128,23 @@
             .c-social-media {
                 text-align: center;
                 margin: 2rem 0 4rem;
+            }
+        }
+    }
+
+    &__slogan {
+        display: none;
+        @include bp(xs, max) {
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            padding-left: $b-navbar-horizontal-padding;
+
+            svg {
+                width: 100%;
+                height: auto;
+                max-width: 225px;
+                @include spacing(margin, left, itemspace);
             }
         }
     }

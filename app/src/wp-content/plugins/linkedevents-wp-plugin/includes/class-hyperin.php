@@ -12,7 +12,7 @@ class LinkedEvents {
 
 
     /**
-     * Update stores and save to transiend.
+     * Update stores and save to transient.
      *
      */
     public function updateStores() {
@@ -25,7 +25,7 @@ class LinkedEvents {
             $stores = $response->data;
         }
 
-        //print_r($stores);
+        // print_r($response);
 
         // Extend with single store information.
         array_walk($stores, function(&$store) {

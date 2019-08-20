@@ -6,15 +6,23 @@
         @include font-size(mdsm); // yup
         transition: 0.2s ease-in-out;
 
+        * {
+            transition: 0.2s ease-in-out;
+        }
+
+        svg, svg * {
+            fill: black;
+        }
+
         &:hover,
         &:focus {
             color: $color-link-hover;
 
-            i, svg {
+            i, svg, svg * {
                 border-color: $color-link-hover !important;
             }
 
-            svg {
+            svg, svg * {
                 fill: $color-link-hover;
             }
         }
@@ -63,5 +71,9 @@
     }
 
     &__calendar-link {
+    }
+
+    &__ticket-link {
+
     }
 }

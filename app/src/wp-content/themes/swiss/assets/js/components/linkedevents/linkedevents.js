@@ -522,14 +522,16 @@ class LinkedEvents extends React.Component {
                                                             this.state.language
                                                         ]}
                                             </p>
-                                            <p>
-                                                <i className="c-icon c-icon__money" />{" "}
-                                                {
-                                                    item.meta.price[
-                                                        this.state.language
-                                                    ]
-                                                }
-                                            </p>
+                                            {item.meta.price && item.meta.price[this.state.language] &&
+                                                <p>
+                                                    <i className="c-icon c-icon__money" />{" "}
+                                                    {
+                                                        item.meta.price[
+                                                            this.state.language
+                                                        ]
+                                                    }
+                                                </p>
+                                            }
                                         </div>
                                         <div
                                             className="c-btn c-btn--arrow"
@@ -636,6 +638,16 @@ class LinkedEvents extends React.Component {
                                                 ]
                                             }
                                         </p>
+                                        {item.meta.price && item.meta.price[this.state.language] &&
+                                            <p>
+                                                <i className="c-icon c-icon__money" />{" "}
+                                                {
+                                                    item.meta.price[
+                                                        this.state.language
+                                                    ]
+                                                }
+                                            </p>
+                                        }
                                     </div>
                                     <div
                                         className="c-btn c-btn--arrow"

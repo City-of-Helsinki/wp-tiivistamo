@@ -2,6 +2,10 @@
     <div class="b-navbar__container">
         <a tabindex="-1" class="b-navbar__logo js-navbar-logo" style="background-image: url('<?php the_field('opt_logo', 'options') ?>')" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"></a>
 
+        <div class="b-navbar__slogan">
+            <?php echo \Evermade\Swiss\template('_slogan.php'); ?>
+        </div>
+
         <div class="b-navbar__navigation">
             <?php
             /**
