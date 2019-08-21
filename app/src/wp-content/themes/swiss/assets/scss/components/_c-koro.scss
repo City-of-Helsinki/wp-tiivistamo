@@ -58,7 +58,7 @@
             border-width: 2px 0 0 0;
             border-style: solid;
             &:before {
-                top: -2px !important;
+                top: -1px !important;
                 transform: translateY(-100%) !important;
                 @include bp(md) {
                     top: -1px !important;
@@ -71,7 +71,7 @@
         &.c-koro--bottom {
             border-width: 0 0 1px 0;
             border-style: solid;
-            bottom: -2px !important;
+            bottom: -1px !important;
             &:after {
                 bottom: 0px !important;
                 transform: rotate(180deg) translateY(-100%) !important;

@@ -62,9 +62,9 @@
         @include spacing(margin, bottom, itemspace);
     }
 
-    &__extra-link {
+    &__extra-link, &__ticket-link {
         color: $color-blue-bright;
-        svg {
+        svg, svg * {
             fill: $color-blue-bright;
             border-color: $color-blue-bright;
         }
@@ -74,6 +74,5 @@
     }
 
     &__ticket-link {
-
     }
 }

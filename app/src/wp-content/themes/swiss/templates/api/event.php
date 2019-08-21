@@ -54,14 +54,6 @@
 
             <div class="l-event__sidebar">
                 <div class="c-event-sidebar h-wysiwyg-html">
-                    <?php if ( isset($ticket_link) && !empty($ticket_link) ) : ?>
-                        <div class="c-event-sidebar__section">
-                            <ul>
-                                <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__ticket-link" href="%s" target="_blank">%s %s</a></li>', array($ticket_link, $iconTicketFile, __('Buy tickets', 'swiss'))); ?>
-                            </ul>
-                        </div>
-                    <?php endif; ?>
-
                     <div class="c-event-sidebar__section">
                         <?php echo \Evermade\Swiss\sprint('<h3>%s</h3>', __('Add to your calendar', 'swiss')); ?>
                         <ul>
@@ -71,10 +63,13 @@
                         </ul>
                     </div>
 
-                    <?php if ( isset($info_url) && !empty($info_url) ) : ?>
+                    <?php if ( isset($info_url) && !empty($info_url) || isset($ticket_link) && !empty($ticket_link) ) : ?>
                     <div class="c-event-sidebar__section">
                         <?php echo \Evermade\Swiss\sprint('<h3>%s</h3>', __('Extra information', 'swiss')); ?>
-                        <?php echo \Evermade\Swiss\sprint('<a class="c-event-sidebar__extra-link" href="%s" target="_blank">%s %s</a>', array($info_url, $iconEarthFile, __('Event website', 'swiss'))); ?>
+                        <ul>
+                            <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__extra-link" href="%s" target="_blank">%s %s</a></li>', array($info_url, $iconEarthFile, __('Event website', 'swiss'))); ?>
+                            <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__ticket-link" href="%s" target="_blank">%s %s</a></li>', array($ticket_link, $iconTicketFile, __('Buy tickets', 'swiss'))); ?>
+                        </ul>
                     </div>
                     <?php endif; ?>
 
