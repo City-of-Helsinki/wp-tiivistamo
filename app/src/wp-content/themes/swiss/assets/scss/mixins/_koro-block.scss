@@ -35,11 +35,11 @@
         background-repeat: repeat-x;
         background-size: auto 100%;
         @if $size == "section" {
-            top: -2px;
-            height: 2.5rem;
+            //top: -2px;
+            height: 25px;
         } @else if $size == "itemspace" {
-            top: -2px;
-            height: 1rem;
+            //top: -2px;
+            height: 10px;
         }
 
         @if $color == "grey" {
@@ -59,7 +59,7 @@
         }
 
         @include bp(sm, max) {
-            background-size: auto 52%;
+            background-size: auto 50%;
             background-position: center bottom; // because of rotation use backwards vertical positioning
         }
     }
@@ -77,9 +77,9 @@
         background-size: auto 100%;
 
         @if $size == "section" {
-            height: 2.5rem;
+            height: 25px;
         } @else if $size == "itemspace" {
-            height: 1rem;
+            height: 10px;
         }
 
         @if $color == "grey" {
