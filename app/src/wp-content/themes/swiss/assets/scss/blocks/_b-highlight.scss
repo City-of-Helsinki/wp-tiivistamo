@@ -24,17 +24,17 @@
             background: $color-pink-lighter;
             & {
                 h1,h2,h3,h4,h5,h6,p,span {
-                    color: white;
+                    color: black;
                 }
 
                 a, a.c-btn {
-                    border-color: white;
-                    color: white !important;
+                    border-color: black;
+                    color: black !important;
                 }
 
                 .c-btn--arrow {
                     &:before {
-                        background-image: url('../img/chevron-white.svg');
+                        background-image: url('../img/chevron.svg');
                     }
                 }
             }
@@ -44,17 +44,17 @@
             background: $color-green-lighter;
             & {
                 h1,h2,h3,h4,h5,h6,p,span {
-                    color: white;
+                    color: black;
                 }
 
                 a, a.c-btn {
-                    border-color: white;
-                    color: white !important;
+                    border-color: black;
+                    color: black !important;
                 }
 
                 .c-btn--arrow {
                     &:before {
-                        background-image: url('../img/chevron-white.svg');
+                        background-image: url('../img/chevron.svg');
                     }
                 }
             }
@@ -76,6 +76,10 @@
                     &:before {
                         background-image: url('../img/chevron-white.svg');
                     }
+                }
+
+                svg, svg * {
+                    fill: white;
                 }
             }
         }

@@ -53,6 +53,16 @@
         }
         .b-large-image-text--pink & {
             background: $color-pink-lighter;
+            & {
+                h1,h2,h3,h4,h5,h6,p,span {
+                    color: black;
+                }
+
+                a.c-btn {
+                    border-color: black;
+                    color: black;
+                }
+            }
         }
         .b-large-image-text--white & {
             background: #fff;
@@ -69,6 +79,16 @@
         }
         .b-large-image-text--green & {
             background: $color-green-lighter;
+            & {
+                h1,h2,h3,h4,h5,h6,p,span {
+                    color: black;
+                }
+
+                a.c-btn {
+                    border-color: black;
+                    color: black;
+                }
+            }
         }
         .b-large-image-text--blue & {
             background: $color-blue-bright;
