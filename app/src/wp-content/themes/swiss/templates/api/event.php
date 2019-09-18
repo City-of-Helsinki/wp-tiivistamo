@@ -57,9 +57,9 @@
                     <div class="c-event-sidebar__section">
                         <?php echo \Evermade\Swiss\sprint('<h3>%s</h3>', __('Add to your calendar', 'swiss')); ?>
                         <ul>
-                            <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__calendar-link" href="%s" target="_blank">%s %s</a></li>', array($calendar_google, $iconHeartFile, __('Add to Google Calendar', 'swiss'))); ?>
-                            <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__calendar-link" href="%s" target="_blank">%s %s</a></li>', array($calendar_ics, $iconHeartFile, __('Add to iCal', 'swiss'))); ?>
-                            <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__calendar-link" href="%s" target="_blank">%s %s</a></li>', array($calendar_ics, $iconHeartFile, __('Add to Outlook', 'swiss'))); ?>
+                            <?php echo ( isset($calendar_google) ? \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__calendar-link" href="%s" target="_blank">%s %s</a></li>', array($calendar_google, $iconHeartFile, __('Add to Google Calendar', 'swiss'))) : '' ); ?>
+                            <?php echo ( isset($calendar_ics) ? \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__calendar-link" href="%s" target="_blank">%s %s</a></li>', array($calendar_ics, $iconHeartFile, __('Add to iCal', 'swiss'))) : ''); ?>
+                            <?php echo ( isset($calendar_ics) ? \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__calendar-link" href="%s" target="_blank">%s %s</a></li>', array($calendar_ics, $iconHeartFile, __('Add to Outlook', 'swiss'))) : ''); ?>
                         </ul>
                     </div>
 
