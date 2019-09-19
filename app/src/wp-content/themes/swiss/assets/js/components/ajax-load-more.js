@@ -38,7 +38,7 @@ const Item = ({data: {post_title,post_image,post_permalink,post_date,event_locat
 
     const eventFields =  event_starts ? (<div className="c-card__event-fields">
     <div className="c-card__event-time"><i className="c-icon c-icon__clock"></i>{event_starts}</div>
-    <div className="c-card__event-location"><i className="c-icon c-icon__marker"></i>{event_location}</div>
+    {/*<div className="c-card__event-location"><i className="c-icon c-icon__marker"></i>{event_location}</div>*/}
     </div>) : ('') ;
 
     // const meta = event_starts ? (<div className="c-card__meta">{window.swissLocalization['event']}</div>) : (<div className="c-card__meta">{post_date}</div>);

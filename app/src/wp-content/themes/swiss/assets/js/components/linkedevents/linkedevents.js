@@ -508,7 +508,8 @@ class LinkedEvents extends React.Component {
                                                     )}
                                                 </time>
                                             </p>
-                                            <p>
+                                            {/*
+                                                <p>
                                                 <i className="c-icon c-icon__marker" />{" "}
                                                 {
                                                     item.meta.location.name[
@@ -521,7 +522,8 @@ class LinkedEvents extends React.Component {
                                                             .location_extra[
                                                             this.state.language
                                                         ]}
-                                            </p>
+                                                </p>
+                                            */}
                                             {item.meta.price && item.meta.price[this.state.language] &&
                                                 <p>
                                                     <i className="c-icon c-icon__money" />{" "}

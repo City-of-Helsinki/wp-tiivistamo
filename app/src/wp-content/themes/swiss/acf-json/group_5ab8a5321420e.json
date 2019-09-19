@@ -34,8 +34,8 @@
                 "class": "",
                 "id": ""
             },
-            "display_format": "d.m.Y g.i",
-            "return_format": "d.m.Y g.i",
+            "display_format": "d.m.Y H.i",
+            "return_format": "d.m.Y H.i",
             "first_day": 1
         },
         {
@@ -51,8 +51,8 @@
                 "class": "",
                 "id": ""
             },
-            "display_format": "d.m. Y g.i",
-            "return_format": "d.m. Y g.i",
+            "display_format": "d.m. Y H.i",
+            "return_format": "d.m. Y H.i",
             "first_day": 1
         }
     ],
