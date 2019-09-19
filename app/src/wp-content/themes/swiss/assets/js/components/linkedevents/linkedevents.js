@@ -632,14 +632,16 @@ class LinkedEvents extends React.Component {
                                                 )}
                                             </time>
                                         </p>
-                                        <p>
-                                            <i className="c-icon c-icon__marker" />{" "}
-                                            {
-                                                item.meta.location.name[
-                                                    this.state.language
-                                                ]
-                                            }
-                                        </p>
+                                        {/*
+                                            <p>
+                                                <i className="c-icon c-icon__marker" />{" "}
+                                                {
+                                                    item.meta.location.name[
+                                                        this.state.language
+                                                    ]
+                                                }
+                                            </p>
+                                        */}
                                         {item.meta.price && item.meta.price[this.state.language] &&
                                             <p>
                                                 <i className="c-icon c-icon__money" />{" "}
