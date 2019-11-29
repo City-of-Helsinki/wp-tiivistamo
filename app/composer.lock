@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "147b17fdea59faff30f9867987f85e87",
-    "content-hash": "7beb7b4035f8709f08ccc6206f501364",
+    "hash": "b161c84248e2709e7226ddac1385ec37",
+    "content-hash": "e3decd9606f984d131de53168ecbe0a0",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+                "reference": "141b272484481432cda342727a427dc1e206bfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
+                "reference": "141b272484481432cda342727a427dc1e206bfa0",
                 "shasum": ""
             },
             "require": {
@@ -74,6 +74,7 @@
                 "RadPHP",
                 "SMF",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -96,6 +97,7 @@
                 "installer",
                 "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
                 "lavalite",
@@ -125,21 +127,21 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-08-27 06:10:37"
+            "time": "2019-08-12 15:00:31"
         },
         {
             "name": "evermade/advanced-custom-fields-pro",
-            "version": "5.8.1",
+            "version": "5.8.6",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/advanced-custom-fields-pro.git",
-                "reference": "b4c352ffbfab5637152f86247b58b09f897329fd"
+                "reference": "805a9bbddd15dd6719986d27e3f3ba092ba4a93a"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/advanced-custom-fields-pro/evermade-advanced-custom-fields-pro-5.8.1-ac639d.tar",
-                "reference": "b4c352ffbfab5637152f86247b58b09f897329fd",
-                "shasum": "457f6ff408c3d6db53f2c6d902d2e96a9d27faf7"
+                "url": "http://composer.em87.io/dist/evermade/advanced-custom-fields-pro/evermade-advanced-custom-fields-pro-5.8.6-9d30a2.tar",
+                "reference": "805a9bbddd15dd6719986d27e3f3ba092ba4a93a",
+                "shasum": "d7331ede26206f85ff8e10febe2faf1f8f9a431c"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -153,7 +155,7 @@
                 "GPL-3.0"
             ],
             "description": "Fork of Advanced Custom Fields Pro repo so we can use it in our composer architecture.",
-            "time": "2019-06-18 08:57:47"
+            "time": "2019-10-28 09:07:42"
         },
         {
             "name": "evermade/gravityforms",
@@ -185,17 +187,17 @@
         },
         {
             "name": "evermade/relevanssi-premium",
-            "version": "2.1.5",
+            "version": "2.4.3",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/relevanssi-premium.git",
-                "reference": "177f29c5deb4215de5fb7aa133d4e6fb8015c4c2"
+                "reference": "5e50e99a2531ba9df7aad23ae3deb0622ff20da8"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/relevanssi-premium/evermade-relevanssi-premium-2.1.5-a270c8.tar",
-                "reference": "177f29c5deb4215de5fb7aa133d4e6fb8015c4c2",
-                "shasum": "7b7692401fc5615f4b55a78b6749da6868365133"
+                "url": "http://composer.em87.io/dist/evermade/relevanssi-premium/evermade-relevanssi-premium-2.4.3-018b03.tar",
+                "reference": "5e50e99a2531ba9df7aad23ae3deb0622ff20da8",
+                "shasum": "b7b86b3a5f3f5a5bb9ac1fe0cbe928c396495be7"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -206,21 +208,21 @@
                 "installer-name": "relevanssi-premium"
             },
             "description": "Our private Relevanssi repo so we can use it in our composer architecture.",
-            "time": "2018-04-30 11:13:11"
+            "time": "2019-10-03 10:04:39"
         },
         {
             "name": "evermade/sitepress-multilingual-cms",
-            "version": "4.2.6",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml.git",
-                "reference": "5f8f061fc86b76936aef9844fb9cc262cb48d8b9"
+                "reference": "9a7b08a09b6cf0a7fcb97a52e7c58beb4d638078"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/sitepress-multilingual-cms/evermade-sitepress-multilingual-cms-4.2.6-6ee8e5.tar",
-                "reference": "5f8f061fc86b76936aef9844fb9cc262cb48d8b9",
-                "shasum": "e061d91892d99d42e33ad8db8d8dc1d760e9248d"
+                "url": "http://composer.em87.io/dist/evermade/sitepress-multilingual-cms/evermade-sitepress-multilingual-cms-4.3.3-8c238a.tar",
+                "reference": "9a7b08a09b6cf0a7fcb97a52e7c58beb4d638078",
+                "shasum": "fffacb1e7a71d8cf7987b8e2ac001fef9e7f8c8d"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -234,21 +236,21 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML (sitepress-multilingual-cms) repo so we can use it in our composer architecture.",
-            "time": "2019-05-08 11:01:20"
+            "time": "2019-11-07 14:26:32"
         },
         {
             "name": "evermade/wpml-string-translation",
-            "version": "2.10.4",
+            "version": "2.10.7",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml-string-translation.git",
-                "reference": "db9df16163add2a5f8106c8d3caee9d01fa35596"
+                "reference": "a9407c027a1d0c702035d77a0c5b32afc9a09353"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-2.10.4-278d24.tar",
-                "reference": "db9df16163add2a5f8106c8d3caee9d01fa35596",
-                "shasum": "683290c2993eb13161ea881e1253997543dcedd3"
+                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-2.10.7-3ac0bb.tar",
+                "reference": "a9407c027a1d0c702035d77a0c5b32afc9a09353",
+                "shasum": "b54b78a4d68ef8c68b4851fa7d09a3a09a2de427"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -262,21 +264,21 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML String Translation repo so we can use it in our composer architecture.",
-            "time": "2019-05-08 11:02:26"
+            "time": "2019-09-30 10:27:24"
         },
         {
             "name": "evermade/wpml-translation-management",
-            "version": "2.8.5",
+            "version": "2.8.7",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml-translation-management.git",
-                "reference": "c9a131f759aa708e55bcc4fcce4c361d0875e502"
+                "reference": "7605de0d3512f65fef420934db8b00cdfa0be7a9"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/wpml-translation-management/evermade-wpml-translation-management-2.8.5-7ccab1.tar",
-                "reference": "c9a131f759aa708e55bcc4fcce4c361d0875e502",
-                "shasum": "e3048abb4c554f50aceadf65a002653102de170c"
+                "url": "http://composer.em87.io/dist/evermade/wpml-translation-management/evermade-wpml-translation-management-2.8.7-ba8ebf.tar",
+                "reference": "7605de0d3512f65fef420934db8b00cdfa0be7a9",
+                "shasum": "1dd7d627bcd2952f4a465028e894799353d00c37"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -290,27 +292,27 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML Translation Management repo so we can use it in our composer architecture.",
-            "time": "2019-05-08 11:03:12"
+            "time": "2019-09-18 12:04:59"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.2.2",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "bbded8adf0ddd8cafdbd6e6605e0ee82d5c1dc8a"
+                "reference": "01530fea56649a4040971fc614baa546273d964c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/bbded8adf0ddd8cafdbd6e6605e0ee82d5c1dc8a",
-                "reference": "bbded8adf0ddd8cafdbd6e6605e0ee82d5c1dc8a",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/01530fea56649a4040971fc614baa546273d964c",
+                "reference": "01530fea56649a4040971fc614baa546273d964c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.2.2"
+                "wordpress/core-implementation": "5.2.4"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -330,7 +332,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-06-18 17:57:57"
+            "time": "2019-10-14 20:47:26"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -429,16 +431,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.11.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "82ebae02209c21113908c229e9883c419720738a"
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
-                "reference": "82ebae02209c21113908c229e9883c419720738a",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
                 "shasum": ""
             },
             "require": {
@@ -450,7 +452,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.11-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -467,12 +469,12 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                },
-                {
                     "name": "Gert de Pagter",
                     "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -483,7 +485,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-02-06 07:57:58"
+            "time": "2019-11-27 13:56:44"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -538,15 +540,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "2.2",
+            "version": "2.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/2.2"
+                "reference": "tags/2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -597,16 +599,36 @@
             "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
-            "name": "wpackagist-plugin/regenerate-thumbnails",
-            "version": "3.1.1",
+            "name": "wpackagist-plugin/duplicate-page",
+            "version": "4.0",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
-                "reference": "tags/3.1.1"
+                "url": "https://plugins.svn.wordpress.org/duplicate-page/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-page.zip?timestamp=1573104879",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-page/"
+        },
+        {
+            "name": "wpackagist-plugin/regenerate-thumbnails",
+            "version": "3.1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
+                "reference": "tags/3.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -698,15 +720,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.6.8",
+            "version": "1.6.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.6.8"
+                "reference": "tags/1.6.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.6.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.6.9.zip",
                 "reference": null,
                 "shasum": null
             },
