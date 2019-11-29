@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b161c84248e2709e7226ddac1385ec37",
-    "content-hash": "e3decd9606f984d131de53168ecbe0a0",
+    "hash": "7164ca0961fada1901a5bc687bc23757",
+    "content-hash": "1a8a82b694e503e0fa046d180e9ac003",
     "packages": [
         {
             "name": "composer/installers",
@@ -240,17 +240,17 @@
         },
         {
             "name": "evermade/wpml-string-translation",
-            "version": "2.10.7",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml-string-translation.git",
-                "reference": "a9407c027a1d0c702035d77a0c5b32afc9a09353"
+                "reference": "2b8f159b784b1b4419b23954f35d64d3f007af1f"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-2.10.7-3ac0bb.tar",
-                "reference": "a9407c027a1d0c702035d77a0c5b32afc9a09353",
-                "shasum": "b54b78a4d68ef8c68b4851fa7d09a3a09a2de427"
+                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-3.0.3-a938dc.tar",
+                "reference": "2b8f159b784b1b4419b23954f35d64d3f007af1f",
+                "shasum": "d16ccb550a61328167f00e4f5f2467997f9d9267"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -264,21 +264,21 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML String Translation repo so we can use it in our composer architecture.",
-            "time": "2019-09-30 10:27:24"
+            "time": "2019-11-07 14:28:11"
         },
         {
             "name": "evermade/wpml-translation-management",
-            "version": "2.8.7",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml-translation-management.git",
-                "reference": "7605de0d3512f65fef420934db8b00cdfa0be7a9"
+                "reference": "b97b7820189d05045e15db88053e44ef501f508e"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/wpml-translation-management/evermade-wpml-translation-management-2.8.7-ba8ebf.tar",
-                "reference": "7605de0d3512f65fef420934db8b00cdfa0be7a9",
-                "shasum": "1dd7d627bcd2952f4a465028e894799353d00c37"
+                "url": "http://composer.em87.io/dist/evermade/wpml-translation-management/evermade-wpml-translation-management-2.9.2-30617e.tar",
+                "reference": "b97b7820189d05045e15db88053e44ef501f508e",
+                "shasum": "d0c250a318cf3906573e5ddec43b1003579e8818"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -292,27 +292,27 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML Translation Management repo so we can use it in our composer architecture.",
-            "time": "2019-09-18 12:04:59"
+            "time": "2019-11-07 14:32:56"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.2.4",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "01530fea56649a4040971fc614baa546273d964c"
+                "reference": "17ddddaf049e82655c6d3831ca787350807b0566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/01530fea56649a4040971fc614baa546273d964c",
-                "reference": "01530fea56649a4040971fc614baa546273d964c",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/17ddddaf049e82655c6d3831ca787350807b0566",
+                "reference": "17ddddaf049e82655c6d3831ca787350807b0566",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.2.4"
+                "wordpress/core-implementation": "5.3.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -332,20 +332,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-10-14 20:47:26"
+            "time": "2019-11-12 20:45:53"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "0.2.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
+                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
-                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
+                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,8 @@
                 "composer/installers": "<1.0.6"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev"
+                "composer/composer": "^1.0",
+                "phpunit/phpunit": ">=4.8.35"
             },
             "type": "composer-plugin",
             "extra": {
@@ -368,7 +369,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -380,7 +381,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11 15:15:30"
+            "time": "2018-11-09 20:10:38"
         },
         {
             "name": "spatie/calendar-links",
@@ -700,15 +701,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "1.4.2",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/1.4.2"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.4.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -720,15 +721,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.6.9",
+            "version": "1.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.6.9"
+                "reference": "tags/1.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.6.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.7.0.zip",
                 "reference": null,
                 "shasum": null
             },
