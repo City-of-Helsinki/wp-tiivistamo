@@ -25,6 +25,7 @@ COPY ./php.ini /usr/local/etc/php
 RUN bash -c "rm -rf /var/lib/apt/lists/*"
 RUN bash -c "curl -sL https://deb.nodesource.com/setup_6.x | bash -"
 RUN bash -c "apt-get install -y nodejs"
+RUN bash -c "apt-get install -y npm"
 RUN bash -c "npm install -g yarn"
 
 # install php composer

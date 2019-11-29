@@ -505,7 +505,11 @@ class LinkedEvents extends React.Component {
                                                     {this.formatTimestamp(
                                                         item.meta.start_time,
                                                         "HH:mm"
-                                                    )}
+                                                    )}  
+                                                    {item.meta.end_time && (' - ' + this.formatTimestamp(
+                                                        item.meta.end_time,
+                                                        "HH:mm"
+                                                    ))}
                                                 </time>
                                             </p>
                                             {/*
@@ -629,7 +633,11 @@ class LinkedEvents extends React.Component {
                                                 {this.formatTimestamp(
                                                     item.meta.start_time,
                                                     "HH:mm"
-                                                )}
+                                                )} 
+                                                {item.meta.end_time && (' - ' + this.formatTimestamp(
+                                                        item.meta.end_time,
+                                                        "HH:mm"
+                                                ))}
                                             </time>
                                         </p>
                                         {/*

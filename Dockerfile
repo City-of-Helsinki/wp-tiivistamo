@@ -2,7 +2,7 @@ FROM php:7.2-fpm
 
 LABEL maintainer="Evermade"
 
-RUN apt-get update && apt-get -y install nginx supervisor gnupg git subversion zip wget
+RUN apt-get update && apt-get -y install nginx supervisor gnupg git subversion zip wget npm
 
 RUN docker-php-ext-install mysqli
 
