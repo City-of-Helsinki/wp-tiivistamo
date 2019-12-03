@@ -54,8 +54,8 @@
                 $iconTicketFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/lippu.svg'); 
 
                 $facebookLink = array_search('extlink_facebook', array_column($external_links, 'name')) !== FALSE ? $external_links[array_search('extlink_facebook', array_column($external_links, 'name'))]->link : '' ;
-                $instagramLink = array_search('extlink_instagram', array_column($external_links, 'name')) ? $external_links[array_search('extlink_instagram', array_column($external_links, 'name'))]->link : '' ;
-                $twitterLink = array_search('extlink_twitter', array_column($external_links, 'name')) ? $external_links[array_search('extlink_twitter', array_column($external_links, 'name'))]->link : '' ;
+                $instagramLink = array_search('extlink_instagram', array_column($external_links, 'name')) !== FALSE  ? $external_links[array_search('extlink_instagram', array_column($external_links, 'name'))]->link : '' ;
+                $twitterLink = array_search('extlink_twitter', array_column($external_links, 'name')) !== FALSE  ? $external_links[array_search('extlink_twitter', array_column($external_links, 'name'))]->link : '' ;
 
                 
             ?>
