@@ -79,8 +79,8 @@
                             <ul class="c-share__list">                               
                                     
                                 <?php echo \Evermade\Swiss\sprint('<li><a class="facebook" href="%s" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>', array($facebookLink)); ?>
-                                <?php echo \Evermade\Swiss\sprint('<li><a class="instagram" href="%s" target="_blank"><i class="fab fa-instagram"></i>Facebook</a></li>', array($instagramLink)); ?>
-                                <?php echo \Evermade\Swiss\sprint('<li><a class="twitter" href="%s" target="_blank"><i class="fab fa-twitter"></i>Facebook</a></li>', array($twitterLink)); ?>
+                                <?php echo \Evermade\Swiss\sprint('<li><a class="instagram" href="%s" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>', array($instagramLink)); ?>
+                                <?php echo \Evermade\Swiss\sprint('<li><a class="twitter" href="%s" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>', array($twitterLink)); ?>
                                        
                             </ul>
                         </div>
