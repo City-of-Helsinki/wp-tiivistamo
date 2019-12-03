@@ -14,6 +14,8 @@ if ($sitepress->get_current_language() != $lang) {
 $linkedEvents = new \Evermade\LinkedEvents\LinkedEvents();
 $event = $linkedEvents->getStore(get_query_var('store_id'));
 
+$external_links = $event->external_links != null ? $event->external_links : '';
+
 if ( $sitepress->get_current_language() ) {
     switch ($sitepress->get_current_language()) {
     case 'fi':

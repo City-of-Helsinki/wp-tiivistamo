@@ -32,7 +32,7 @@ const paths = {
     themePath: 'wp-content/themes/' + process.env.WP_THEME_NAME + '/',
     copy: ['vendor/wordpress/**/*', 'src/.htaccess', 'src/.htpasswd', 'src/**/*'],
     acf: ['dist/wp-content/themes/' + process.env.WP_THEME_NAME + '/acf-json/*.json'],
-    php: ['src/wp-content/themes/' + process.env.WP_THEME_NAME + '/**/*.php', 'src/wp-config.php', 'src/wp-content/plugins/woocommerce/**/*.php', 'src/.htaccess']
+    php: ['src/wp-content/themes/' + process.env.WP_THEME_NAME + '/**/*.php', 'src/wp-config.php', 'src/wp-content/plugins/woocommerce/**/*.php', 'src/wp-content/plugins/linkedevents-wp-plugin/**/*.php' , 'src/.htaccess']
 };
 
 /**

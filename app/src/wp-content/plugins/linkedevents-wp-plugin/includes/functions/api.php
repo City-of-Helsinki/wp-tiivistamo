@@ -54,6 +54,7 @@ function getStores() {
                 'start_time' => $store->start_time,
                 'end_time' => $store->end_time,
                 //'last_published_time' => $store->last_published_time,
+                'external_links' => $store->external_links,
                 'featured_image_url' => sizeof($store->images) > 0 ? $store->images[0]->url : '',
                 'location' => $store->location,
                 'location_extra' => $store->location_extra_info,
@@ -61,7 +62,6 @@ function getStores() {
             )
         ]);
     });
-
     return $storesWp;
 
 }

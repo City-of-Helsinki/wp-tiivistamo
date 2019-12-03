@@ -48,9 +48,17 @@
                 </div>
             </div>
 
-            <?php $iconEarthFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/maapallo.svg'); ?>
-            <?php $iconHeartFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/sydan.svg'); ?>
-            <?php $iconTicketFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/lippu.svg'); ?>
+            <?php 
+                $iconEarthFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/maapallo.svg'); 
+                $iconHeartFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/sydan.svg'); 
+                $iconTicketFile = file_get_contents(get_template_directory().'/assets/img/oodi-icons/lippu.svg'); 
+
+                $facebookLink = array_search('extlink_facebook', array_column($external_links, 'name')) !== FALSE ? $external_links[array_search('extlink_facebook', array_column($external_links, 'name'))]->link : '' ;
+                $instagramLink = array_search('extlink_instagram', array_column($external_links, 'name')) ? $external_links[array_search('extlink_instagram', array_column($external_links, 'name'))]->link : '' ;
+                $twitterLink = array_search('extlink_twitter', array_column($external_links, 'name')) ? $external_links[array_search('extlink_twitter', array_column($external_links, 'name'))]->link : '' ;
+
+                
+            ?>
 
             <div class="l-event__sidebar">
                 <div class="c-event-sidebar h-wysiwyg-html">
@@ -67,6 +75,15 @@
                     <div class="c-event-sidebar__section">
                         <?php echo \Evermade\Swiss\sprint('<h3>%s</h3>', __('Extra information', 'swiss')); ?>
                         <ul>
+                        <div class="c-share c-share--vertical">
+                            <ul class="c-share__list">                               
+                                    
+                                <?php echo \Evermade\Swiss\sprint('<li><a class="facebook" href="%s" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a></li>', array($facebookLink)); ?>
+                                <?php echo \Evermade\Swiss\sprint('<li><a class="instagram" href="%s" target="_blank"><i class="fab fa-instagram"></i>Facebook</a></li>', array($instagramLink)); ?>
+                                <?php echo \Evermade\Swiss\sprint('<li><a class="twitter" href="%s" target="_blank"><i class="fab fa-twitter"></i>Facebook</a></li>', array($twitterLink)); ?>
+                                       
+                            </ul>
+                        </div>
                             <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__extra-link" href="%s" target="_blank">%s %s</a></li>', array($info_url, $iconEarthFile, __('Event website', 'swiss'))); ?>
                             <?php echo \Evermade\Swiss\sprint('<li><a class="c-event-sidebar__ticket-link" href="%s" target="_blank">%s %s</a></li>', array($ticket_link, $iconTicketFile, __('Buy tickets', 'swiss'))); ?>
                         </ul>

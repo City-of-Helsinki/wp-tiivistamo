@@ -26,7 +26,7 @@ class LinkedEvents {
         }
 
         // print_r($response);
-
+ 
         // Extend with single store information.
         array_walk($stores, function(&$store) {
             $store = $this->getStore($store->id);
