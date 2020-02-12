@@ -59,6 +59,7 @@ function getStores() {
                 'location' => $store->location,
                 'location_extra' => $store->location_extra_info,
                 'price' => $store->offers[0]->price,
+                'video' => sizeof($store->videos) > 0 ? $store->videos[0]->url : '',
             )
         ]);
     });
