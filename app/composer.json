@@ -30,7 +30,7 @@
     "johnpbloch/wordpress-core": "~5.3.0",
     "evermade/advanced-custom-fields-pro": "~5.8.0",
     "wpackagist-plugin/wp-super-cache": "~1.7.0",
-    "wpackagist-plugin/wordpress-seo": "~11.3.0",
+    "wpackagist-plugin/wordpress-seo": "~13.0.0",
     "wpackagist-plugin/amazon-s3-and-cloudfront": "~2.1",
     "wpackagist-plugin/amazon-web-services": "~1.0.4",
     "wpackagist-plugin/wp-mail-smtp": "~1.7.0",
@@ -49,7 +49,7 @@
 
   },
   "require-dev": {
-    "wpackagist-plugin/fakerpress": "~0.4.7"
+    "wpackagist-plugin/fakerpress": "~0.5.0"
   },
   "extra": {
     "wordpress-install-dir": "vendor/wordpress",

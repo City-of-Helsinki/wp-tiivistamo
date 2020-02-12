@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7164ca0961fada1901a5bc687bc23757",
-    "content-hash": "1a8a82b694e503e0fa046d180e9ac003",
+    "hash": "a9968b66570e9152a89f3a15896bc3e1",
+    "content-hash": "45dc613dc1c86da67263a0c966fc855c",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0"
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0",
+                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
                 "shasum": ""
             },
             "require": {
@@ -66,6 +66,7 @@
                 "Kanboard",
                 "Lan Management System",
                 "MODX Evo",
+                "MantisBT",
                 "Mautic",
                 "Maya",
                 "OXID",
@@ -120,6 +121,7 @@
                 "shopware",
                 "silverstripe",
                 "sydes",
+                "sylius",
                 "symfony",
                 "typo3",
                 "wordpress",
@@ -127,7 +129,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2019-08-12 15:00:31"
+            "time": "2020-02-07 10:39:20"
         },
         {
             "name": "evermade/advanced-custom-fields-pro",
@@ -212,17 +214,17 @@
         },
         {
             "name": "evermade/sitepress-multilingual-cms",
-            "version": "4.3.3",
+            "version": "4.3.6",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml.git",
-                "reference": "9a7b08a09b6cf0a7fcb97a52e7c58beb4d638078"
+                "reference": "a51b27b80d97a30005ff7a46ab7e9e57b0157783"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/sitepress-multilingual-cms/evermade-sitepress-multilingual-cms-4.3.3-8c238a.tar",
-                "reference": "9a7b08a09b6cf0a7fcb97a52e7c58beb4d638078",
-                "shasum": "fffacb1e7a71d8cf7987b8e2ac001fef9e7f8c8d"
+                "url": "http://composer.em87.io/dist/evermade/sitepress-multilingual-cms/evermade-sitepress-multilingual-cms-4.3.6-a9b9df.tar",
+                "reference": "a51b27b80d97a30005ff7a46ab7e9e57b0157783",
+                "shasum": "9367f96d1a0009ec0803131fbceba7c7611552c1"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -236,21 +238,21 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML (sitepress-multilingual-cms) repo so we can use it in our composer architecture.",
-            "time": "2019-11-07 14:26:32"
+            "time": "2020-01-31 12:10:48"
         },
         {
             "name": "evermade/wpml-string-translation",
-            "version": "3.0.3",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml-string-translation.git",
-                "reference": "2b8f159b784b1b4419b23954f35d64d3f007af1f"
+                "reference": "7da0ec9c79bb513ad7ac6ab5ab124ff62ed298b6"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-3.0.3-a938dc.tar",
-                "reference": "2b8f159b784b1b4419b23954f35d64d3f007af1f",
-                "shasum": "d16ccb550a61328167f00e4f5f2467997f9d9267"
+                "url": "http://composer.em87.io/dist/evermade/wpml-string-translation/evermade-wpml-string-translation-3.0.6-950596.tar",
+                "reference": "7da0ec9c79bb513ad7ac6ab5ab124ff62ed298b6",
+                "shasum": "8577f9db51a78b499504d955e57aa5e62c7cafa8"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -264,21 +266,21 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML String Translation repo so we can use it in our composer architecture.",
-            "time": "2019-11-07 14:28:11"
+            "time": "2020-01-31 12:15:48"
         },
         {
             "name": "evermade/wpml-translation-management",
-            "version": "2.9.2",
+            "version": "2.9.4",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:evermade/wpml-translation-management.git",
-                "reference": "b97b7820189d05045e15db88053e44ef501f508e"
+                "reference": "8e9bf5a6a8360a2d05697da7071bc8969478458e"
             },
             "dist": {
                 "type": "tar",
-                "url": "http://composer.em87.io/dist/evermade/wpml-translation-management/evermade-wpml-translation-management-2.9.2-30617e.tar",
-                "reference": "b97b7820189d05045e15db88053e44ef501f508e",
-                "shasum": "d0c250a318cf3906573e5ddec43b1003579e8818"
+                "url": "http://composer.em87.io/dist/evermade/wpml-translation-management/evermade-wpml-translation-management-2.9.4-80d644.tar",
+                "reference": "8e9bf5a6a8360a2d05697da7071bc8969478458e",
+                "shasum": "ddb0b7af8a10c2ce9971641c627751a5f6ba3615"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -292,27 +294,27 @@
                 "GPL-3.0"
             ],
             "description": "Our private WPML Translation Management repo so we can use it in our composer architecture.",
-            "time": "2019-11-07 14:32:56"
+            "time": "2020-01-31 12:17:44"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.3.0",
+            "version": "5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "17ddddaf049e82655c6d3831ca787350807b0566"
+                "reference": "a282ab0051fac21d4e0cdd828519e6739743ba92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/17ddddaf049e82655c6d3831ca787350807b0566",
-                "reference": "17ddddaf049e82655c6d3831ca787350807b0566",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/a282ab0051fac21d4e0cdd828519e6739743ba92",
+                "reference": "a282ab0051fac21d4e0cdd828519e6739743ba92",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.3.0"
+                "wordpress/core-implementation": "5.3.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -332,7 +334,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-11-12 20:45:53"
+            "time": "2019-12-18 22:32:15"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -432,7 +434,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.13.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -541,15 +543,15 @@
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
-                "reference": "tags/2.3.1"
+                "reference": "tags/2.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -681,15 +683,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.3",
+            "version": "13.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.3"
+                "reference": "tags/13.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.13.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -721,15 +723,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.7.0"
+                "reference": "tags/1.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.7.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -743,7 +745,7 @@
     "packages-dev": [
         {
             "name": "wpackagist-plugin/fakerpress",
-            "version": "0.4.11",
+            "version": "0.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/fakerpress/",
@@ -751,7 +753,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fakerpress.zip?timestamp=1521872725",
+                "url": "https://downloads.wordpress.org/plugin/fakerpress.zip?timestamp=1573346196",
                 "reference": null,
                 "shasum": null
             },
