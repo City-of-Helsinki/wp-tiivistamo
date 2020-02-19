@@ -1,2 +1,0 @@
-# tiivistamo
-Tiivistämö 
