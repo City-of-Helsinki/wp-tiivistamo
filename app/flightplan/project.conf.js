@@ -21,7 +21,7 @@ var config = {
                 agent: process.env.SSH_AUTH_SOCK
             },
             options: {
-                buildRoot: '/srv/www/oodi.staging.em87.io', // No trailing slash
+                buildRoot: '/srv/www/NOSTAGINGHERESORRY.staging.em87.io', // No trailing slash
                 webRoot: '/dist', //relative from build root
                 url: 'http://tiivistamo.staging.em87.io', // No trailing slash
                 dbPush: true,

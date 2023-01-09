@@ -280,7 +280,7 @@ class LinkedEvents extends React.Component {
                 langFiltered.push(item);
             }
         }
-        )}
+        );}
 
         if (this.state.highlighted.length > 0) {
             highlighted = langFiltered.filter(item => {
@@ -495,7 +495,8 @@ class LinkedEvents extends React.Component {
                                         </h4>
                                         <div className="c-event-card__meta">
                                             <p>
-                                                <i className="c-icon c-icon__clock" />{" "}
+                                                {item.event_status === "EventCancelled" && <span className="c-event-card__peruttu">{window.swissLocalization.event_status}</span>}
+                                                {" "}<i className="c-icon c-icon__clock" />{" "}
                                                 <time
                                                     dateTime={this.formatTimestamp(
                                                         item.meta.start_time,
@@ -623,7 +624,8 @@ class LinkedEvents extends React.Component {
                                     </h4>
                                     <div className="c-event-card__meta">
                                         <p>
-                                            <i className="c-icon c-icon__clock" />{" "}
+                                            {item.event_status === "EventCancelled" && <span className="c-event-card__peruttu">{window.swissLocalization.event_status}</span>}
+                                            {" "}<i className="c-icon c-icon__clock" />{" "}
                                             <time
                                                 dateTime={this.formatTimestamp(
                                                     item.meta.start_time,

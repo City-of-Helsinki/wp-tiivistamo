@@ -49,6 +49,7 @@ function getStores() {
             'ID' => $store->id,
             'post_title' => $store->name,
             'post_content' => $store->description,
+            'event_status' => $store->event_status,
             // 'permalink' => get_bloginfo('url') . '/liike/' . $store->id . '/' . sanitize_title($store->name),
             'meta' => array(
                 'start_time' => $store->start_time,

@@ -8,7 +8,7 @@ function publicScriptsAndStyles()
     wp_deregister_script('jquery');
 
     // let's get a specific version of jquery
-    wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js', array(), null, false);
+    wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), null, false);
 
     // scripts
     wp_enqueue_script('modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js');
@@ -29,6 +29,7 @@ function publicScriptsAndStyles()
         'remove_filters' => __('Remove filters', 'swiss'),
         'read_more' => __('Read more', 'swiss'),
         'choose' => __('Choose', 'swiss'),
+        'event_status' => __('Event Cancelled', 'swiss'),
         'event' => __('Event', 'swiss'),
         'today' => __('Today', 'swiss'),
         'tomorrow' => __('Tomorrow', 'swiss'),

@@ -39,7 +39,7 @@ export default class DatePicker extends React.Component {
     componentDidUpdate(prevProps) {
         if ( !prevProps.isVisible && this.props.isVisible != prevProps.isVisible ) {
             this.dayPicketInputs.children[0].focus();
-            this.datePickerRef.dayPicker
+            this.datePickerRef.dayPicker;
         }
     }
 

@@ -88,10 +88,10 @@ add_theme_support('post-thumbnails');
 add_theme_support('title-tag');
 
 // register new buttons in the editor
-add_action('admin_head', '\Evermade\Swiss\Hooks\customMCEbuttons');
+add_action('admin_init', '\Evermade\Swiss\Hooks\customMCEbuttons');
 
 // lets remove the main text editor from the post type as we are using block system
-add_action('admin_head', '\Evermade\Swiss\Hooks\hideEditor');
+add_action('admin_init', '\Evermade\Swiss\Hooks\hideEditor');
 
 // lets add our local languages for the swiss text domain
 add_action('after_setup_theme', '\Evermade\Swiss\Hooks\loadTextDomain');

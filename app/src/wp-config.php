@@ -21,7 +21,7 @@
 require dirname(__DIR__).'/vendor/autoload.php';
 
 try {
-    $dotenv = new Dotenv\Dotenv(dirname(__DIR__).'/env');
+    $dotenv = Dotenv\Dotenv::createUnsafeImmutable(dirname(__DIR__).'/env');
     $dotenv->load();
 }
 catch (Exception $e) {
@@ -92,9 +92,8 @@ define('WP_DEBUG', getenv('WP_DEBUG'));
 define('WP_DEBUG_LOG', getenv('WP_DEBUG_LOG'));
 define('WP_DEBUG_DISPLAY', getenv('WP_DEBUG_DISPLAY'));
 
-define('WP_MEMORY_LIMIT', '512M');
-define('WP_MAX_MEMORY_LIMIT', '512M');
-set_time_limit(60);
+define('WP_MEMORY_LIMIT', '1024M');
+define('WP_MAX_MEMORY_LIMIT', '1024M');
 
 //for aws s3 storage
 define('DBI_AWS_ACCESS_KEY_ID', getenv('DBI_AWS_ACCESS_KEY_ID'));

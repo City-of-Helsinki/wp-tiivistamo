@@ -9,6 +9,7 @@
                     <div class="c-event-header">
                         <?php echo \Evermade\Swiss\sprint('<h1 class="c-event-header__title">%s</h1>', $name); ?>
                         <div class="c-event-meta">
+                            <?php echo \Evermade\Swiss\sprint('<p class="c-event-header__peruttu"><b> %s</b></p> ', $event_status); ?>
                             <?php echo \Evermade\Swiss\sprint('<p class="c-event-header__datetime"><i class="c-icon c-icon__clock"></i> %s</p>', $event_datetime->format('j.n.Y H:i')); ?>
                             <div class="c-event-header__location-info">
                             <?php echo \Evermade\Swiss\sprint('<p class="c-event-header__location"><i class="c-icon c-icon__marker"></i> %s</p>', $location_name); ?>
