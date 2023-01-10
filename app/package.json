@@ -49,7 +49,7 @@
     "flightplan": "^0.6.17",
     "font-awesome": "^4.7.0",
     "glob": "^7.1.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
     "gulp-shell": "^0.6.5",
     "gulp-wait": "^0.0.2",
