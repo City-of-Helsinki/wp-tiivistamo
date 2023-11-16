@@ -34,7 +34,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "6.26.0",
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4.3",
     "css-loader": "^0.28.10",
     "del": "^3.0.0",
     "dompurify": "^1.0.8",
